@@ -1,0 +1,4 @@
+package com.radioclouds.visualizer.gui {	import flash.geom.Matrix;		import flash.display.BitmapData;	
+	import flash.display.Sprite;	
+	/**	 * @author matas	 */	public class Rectangle extends Sprite {				public function Rectangle(args : Object) {			super();						var width : Number = args.width || 300;			var height : Number = args.height || 300;			var fillColor : Number = args.color || 0x000000;						var fillBitmap : BitmapData = args.bitmap;			var bitmapMatrix : Matrix = args.matrix;						graphics.lineStyle();				if(fillBitmap){ /* fill the box with bitmap */				graphics.beginBitmapFill(fillBitmap, bitmapMatrix, true);			}else{				graphics.beginFill(fillColor);			}			graphics.drawRect(0, 0, width, height);			graphics.endFill();		}
+	}}

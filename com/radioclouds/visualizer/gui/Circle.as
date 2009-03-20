@@ -1,0 +1,4 @@
+package com.radioclouds.visualizer.gui {	import flash.geom.Matrix;		import flash.display.BitmapData;	
+	import flash.display.Sprite;	
+	/**	 * @author matas	 */	public class Circle extends Sprite {				public function Circle(args : Object) {						super();						var radius : Number = args.radius || 100;			var fillColor : Number = args.color || 0x000000;						var fillBitmap : BitmapData = args.bitmap;			var bitmapMatrix : Matrix = args.matrix;						graphics.lineStyle();				if(fillBitmap){ /* fill the box with bitmap */				graphics.beginBitmapFill(fillBitmap, bitmapMatrix, true);			}else{				graphics.beginFill(fillColor);			}			graphics.drawCircle(0, 0, radius);			graphics.endFill();		}
+	}}
