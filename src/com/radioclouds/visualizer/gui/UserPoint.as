@@ -28,6 +28,7 @@ package com.radioclouds.visualizer.gui {
 		private var _imageLoader : Loader;
 		private var _active : Boolean;
 		private var _permalink : String;
+		private var _id : String;
 		private var _stayVisible : Boolean;
 		private var _lineContainer : Sprite;
 
@@ -36,8 +37,9 @@ package com.radioclouds.visualizer.gui {
 
 			_userName = settings.userName;
 			_permalink = settings.permalink;
+			_id = settings.id;
 			_userPicUrl = settings.userPicUrl;
-			_anchorClip = null || anchorObject;
+			_anchorClip = null || anchorObject;
 			_lineContainer = new Sprite();
 			addChild(_lineContainer);
 
@@ -195,6 +197,10 @@ package com.radioclouds.visualizer.gui {
 		
 		public function get permalink() : String {
 			return _permalink;
+		}
+		
+		public function get id() : String {
+			return _id;
 		}
 		
 		private function log(msg : String) : void {

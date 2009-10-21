@@ -13,7 +13,7 @@ package com.radioclouds.visualizer.api {
 		public static const DATA_LOADED : String = "DataLoaded";
 
 		private static const _instance : ServiceManager = new ServiceManager(SingletonLock);
-		private static const API_KEY : String = "sc_visualizer";
+		private static const API_KEY : String = "ivTTQUWit07TrzyHeIg21w";
 		private static const _API_URL_HOST : String = "http://api.soundcloud.com/"; //"http://api.soundcloud.com/"
 		private static const _API_URL_USERS : String = _API_URL_HOST + "users/";
 		private static const _API_CONTACTS_QUERY : String = "/contacts?track_count[from]=1";
@@ -90,7 +90,7 @@ package com.radioclouds.visualizer.api {
 
 
 		public function get tokenString() : String {
-			return "?consumer_key=" + API_KEY;
+			return "?oauth_consumer_key=" + API_KEY;
 		}
 
 		public override function toString():String
