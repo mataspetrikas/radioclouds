@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<title>RadioClouds</title> 
+<meta name="description" content="RadioClouds is a radio and social graphing application created by Matas Petrikas using Adobe Flash and SoundCloud API" /> 
+</head> 
+<style type="text/css" media="screen"> 
+  body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+</style> 
+ 
+<script type="text/javascript" src="swfobject.js"></script> 
+<script type="text/javascript" src="swfaddress.js"></script> 
+<script type="text/javascript"> 
+  var queryvars = location.hash.replace('#/?','');
+  var flashvars = false;
+  var params = {
+    allowFullScreen: "true",
+    allowScriptAccess: "always"
+  };
+  var attributes = {
+    id: "RadioCloudsFlash"
+  };
+  swfobject.embedSWF("radioclouds.swf?token=" + Math.random() * 10000 + "&" + queryvars, "RadioClouds", "100%", "100%", "9.0.0","expressInstall.swf", flashvars, params, attributes);
+</script> 
+<body> 
+ 
+ 
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="100%" height="100%" align="middle" allowFullScreen="true" id="RadioClouds" > 
+<param name="allowScriptAccess" value="always"></param> 
+	<param name="movie" value="radioclouds.swf?24071415" /><param name="quality" value="high" /><param name="bgcolor" value="#666666" />	<embed src="radioclouds.swf?24071415" quality="high" bgcolor="#666666" width="100%" height="100%" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"  allowFullScreen="true" /> 
+	</object> 
+	
+  <script type="text/javascript"> 
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script> 
+  <script type="text/javascript"> 
+  var pageTracker = _gat._getTracker("UA-2100056-4");
+  pageTracker._initData();
+  pageTracker._trackPageview();
+  </script></body> 
+</html> 

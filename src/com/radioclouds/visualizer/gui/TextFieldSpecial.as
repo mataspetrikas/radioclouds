@@ -25,7 +25,7 @@ package com.radioclouds.visualizer.gui {
 			width = args.width || width;
 			height = args.height || height;
 			mouseEnabled = args.mouseEnabled || false;
-			embedFonts = args.embedFonts || true;
+			embedFonts = args.embedFonts || false;
 			multiline = args.multiline || false;
 			selectable = args.selectable || false;
 			border = args.border || false;

@@ -1,0 +1,6 @@
+#Wed Sep 29 13:05:41 CEST 2010
+com.powerflasher.fdt.core.DefaultOutputFolder=build
+com.powerflasher.fdt.core.Language=AS3
+com.powerflasher.fdt.core.LanguageType=Flex_3_SDK_0
+com.powerflasher.fdt.core.useProjectFormatterSettings=true
+eclipse.preferences.version=1

@@ -452,7 +452,7 @@ package com.radioclouds.visualizer {
 			
 			// load the track
 			_sound = new Sound();
-			_sound.load(new URLRequest(url + _serviceManager.tokenString));
+			_sound.load(new URLRequest(_serviceManager.tokenizeUrl(url)));
 			_sound.addEventListener(IOErrorEvent.IO_ERROR, onLoadError);
 			_soundChannel = _sound.play(_seekPosition);
 						

@@ -1,4 +1,5 @@
 package com.radioclouds.visualizer.gui {
+	import flash.text.TextFormat;
 	import flash.display.Sprite;
 
 	import com.radioclouds.visualizer.Styles;	
@@ -20,7 +21,7 @@ package com.radioclouds.visualizer.gui {
 			useHandCursor = true;
 			buttonMode = true;
 			
-			var format = settings.format || Styles.COPY;
+			var format:TextFormat = TextFormat(settings.format) || Styles.COPY;
 			
 			_btnLabel = new TextFieldSpecial({htmlText:_labelText, format: format});
 			addChild(_btnLabel);
